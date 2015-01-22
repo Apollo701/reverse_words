@@ -17,9 +17,6 @@ CodeEval Hello
 =end
 
 def reverse_words
-  File.readlines(ARGV.first).map do |line|
-    print line.split.reverse.join(' ')
-    puts
-  end
+  File.readlines(ARGV.first).map {|line| puts line.split.reverse.join(' ') }
 end
 reverse_words
